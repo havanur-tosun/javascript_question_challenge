@@ -19,6 +19,22 @@
 // input: string => "21/06/2019" or "21.06.2019" or "21 06 2019" etc.
 // output: string => "2019-06-21"
 
+
+// let correctEntry = true;
+// while (correctEntry) {
+//     var input = window.prompt("Enter your date using DD/MM/YYYY, DD.MM.YYYY or DD MM YYYY format to organize: ")
+    
+//     if (input.length == 10);
+//     correctEntry = false;
+// }
+// let output  = function (inpt) {
+//     let char = /[ ./]/g;
+//     inpt = inpt.replace(char, " ").split(' ');
+//     console.log(inpt);
+//     inpt = [inpt[2], inpt[1], inpt[0]].join('-');
+//     return inpt;
+// }
+// console.log(output(input));
 //=============================================================//
 
 //Reverse String
@@ -76,14 +92,65 @@
 
 // const number = parseInt(prompt('Enter the number of terms: '));
 
-const number = 10;
-let n1 = 0, n2 = 1, nextTerm;
+// const number = 10;
+// let n1 = 0, n2 = 1, nextTerm;
 
-console.log('Fibonacci Series:');
+// console.log('Fibonacci Series:');
 
-for (let i = 1; i <= number; i++) {
-    console.log(n1);
-    nextTerm = n1 + n2;
-    n1 = n2;
-    n2 = nextTerm;
-}
+// for (let i = 1; i <= number; i++) {
+//     console.log(n1);
+//     nextTerm = n1 + n2;
+//     n1 = n2;
+//     n2 = nextTerm;
+// }
+
+//==============================================================//
+
+// get an input from user (use prompt) until you get a valid number between 0 and 100.
+
+
+// let entry = true;
+
+// while (entry) {
+//     let input = prompt("Please enter a number between 0 and 100: ");
+//     let num = parseInt(input)
+//     if(!isNaN(input) && num > 0 && num <= 100){
+//         console.log('It is a valid number');
+//         break;
+//     }else{
+//         console.log('Please enter valid number');
+//     }
+// }
+
+
+// while (true){
+//     let input = prompt("Please enter a number between 0 and 100")
+//     let num = parseInt(input)
+//     if(!isNaN(input) && num > 0 && num <= 100){
+//         console.log('It is a valid number');
+//         break;
+//     }else{
+//         console.log('Please enter valid number');
+//     }
+// }
+
+// there are two other methods to convert strings to numbers:
+// parseInt(string, 10) ==> second parametre is radix which is base 10 in our condition
+// parseFloat("3.14randomstuff") returns 3.14 
+
+
+// ***********next step (we will do this together sooner): use text input in html and warn user if the number is not valid, by changing its border color to red. until you get a valid number.
+
+//==================================================//
+
+
+// const names = ['John', 'James', 'Walter', 'Edward'];
+// let randomElement = names[Math.floor(Math.random()*names.length)];
+// console.log(randomElement)
+
+
+// const starWarsCharachterList = ["Darth", "Kenobi", "Sith", "Mandalorian", "C-3PO", "Anakin", "Han", "Yoda"];
+// let lengthList = starWarsCharachterList.length;
+// let dice = Math.floor(Math.random() * lengthList);
+// let randomName = starWarsCharachterList[dice];
+// console.log(randomName);
